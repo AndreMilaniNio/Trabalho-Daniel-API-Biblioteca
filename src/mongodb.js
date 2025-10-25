@@ -2,7 +2,7 @@ import "dotenv/config";
 import mongoose from "mongoose";
 
 export async function ConnectMongo() {
-  const uri = `${process.env.MONGO_URL}/${process.env.MONGO_DATABASE_NAME}`;
+  const uri = `${process.env.MONGO_URL}${process.env.MONGO_DATABASE_NAME}`;
 
   //   Verifica se a URI realmente existe
   if (!uri) {
