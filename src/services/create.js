@@ -1,5 +1,5 @@
 // Função para criar qualquer Model
-export async function CreateAnyModel(model, body) {
+async function CreateAnyModel(model, body) {
   try {
     const isCreated = await model.create(body);
     return isCreated;
@@ -8,3 +8,5 @@ export async function CreateAnyModel(model, body) {
     throw error;
   }
 }
+
+export { CreateAnyModel }
