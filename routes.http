@@ -1,0 +1,4 @@
+# Requisição de verificação
+GET http://localhost:3000/
+
+###

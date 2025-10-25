@@ -1,0 +1,3 @@
+# Ignorando quando upar pro GitHub
+.env
+node_modules/

@@ -1,0 +1,19 @@
+{
+  "name": "trabalho-daniel",
+  "version": "1.0.0",
+  "description": "API para trabalho do Daniel - RPV",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./src/server.js",
+    "dev:watch": "node --watch ./src/server.js"
+  },
+  "keywords": [],
+  "author": "André Milani",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "mongoose": "^8.19.2"
+  }
+}
