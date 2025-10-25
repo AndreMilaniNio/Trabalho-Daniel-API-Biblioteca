@@ -2,3 +2,13 @@
 GET http://localhost:3000/
 
 ###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Juliano",
+  "sex": "Masculino",
+  "address": "Rua B, 213",
+  "birthDate": "1990-04-13T15:32:00.000Z"
+}
