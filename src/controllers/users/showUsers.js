@@ -1,10 +1,10 @@
-import { FindUser } from "../services/findUser.js";
-import { User } from "../models/users.js";
+import { FindAnyModel } from "../../services/find.js";
+import { User } from "../../models/users.js";
 
 // PARA MOSTRAR USUÁRIOS
 async function ShowUsers(request, response) {
   try {
-    const findedUsers = await FindUser(User);
+    const findedUsers = await FindAnyModel(User);
 
     if (findedUsers.length === 0) {
       return response.status(404).send({ Message: "Conteúdo não encontrado" });

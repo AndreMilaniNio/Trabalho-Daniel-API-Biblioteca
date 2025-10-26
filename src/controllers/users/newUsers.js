@@ -1,5 +1,5 @@
-import { CreateAnyModel } from "../services/create.js";
-import { User } from "../models/users.js";
+import { CreateAnyModel } from "../../services/create.js";
+import { User } from "../../models/users.js";
 
 async function NewUser(request, response) {
   // Tenta isso:
