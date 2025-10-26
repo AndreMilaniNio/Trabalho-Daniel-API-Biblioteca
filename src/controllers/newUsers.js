@@ -12,19 +12,19 @@ async function NewUser(request, response) {
     if (existentUser) {
       return response
         .status(400)
-        .send({ message: "Usuário já existente com esse nome." });
+        .send({ Message: "Usuário já existente com esse nome." });
     }
 
     // Cria um novo usuário no modelo
     const newUser = await CreateAnyModel(User, request.body);
     response
       .status(201)
-      .send({ Message: "Usuário criado!", createdUser: newUser });
+      .send({ Message: "Usuário criado!", CreatedUser: newUser });
   } catch (error) {
     // Em caso de erro:
     response
       .status(400)
-      .send({ Message: "Usuário não criado! erro:", error: error.message });
+      .send({ Message: "Usuário não criado! erro:", Error: error.message });
   }
 }
 
