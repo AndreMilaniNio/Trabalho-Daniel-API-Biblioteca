@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const authorsSchema = new mongoose.Schema({
   name: { type: String, required: true },
   birthDate: { type: Date, required: true },
-  sex: { type: String },
+  sex: { type: String, enum: ["Masculino", "Feminino"], required: true },
 
   writingGenre: {
     type: String,
