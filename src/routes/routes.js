@@ -1,3 +1,4 @@
+import { ShowUsers } from "../controllers/showUsers.js";
 import { NewUser } from "../controllers/newUsers.js";
 
 export async function Routes(app) {
@@ -7,4 +8,6 @@ export async function Routes(app) {
 
   // Criação de usuário
   app.post("/users", NewUser);
+  // Mostrar usuários
+  app.get("/users", ShowUsers);
 }

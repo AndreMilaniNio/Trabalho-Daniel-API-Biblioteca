@@ -2,7 +2,6 @@
 GET http://localhost:3000/
 
 ###
-
 POST http://localhost:3000/users
 Content-Type: application/json
 
@@ -12,3 +11,6 @@ Content-Type: application/json
   "address": "Rua B, 213",
   "birthDate": "1990-04-13T15:32:00.000Z"
 }
+
+###
+GET http://localhost:3000/users
