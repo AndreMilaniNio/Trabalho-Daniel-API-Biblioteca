@@ -7,7 +7,7 @@ const authorsSchema = new mongoose.Schema({
 
   writingGenre: {
     type: String,
-    enum: ["Novel", "Poetry", "Fantasy", "Fiction", "Mystery", "Suspense"],
+    enum: ["Novel", "Poetry", "Fantasy", "Fiction", "Mystery", "Suspense", "Others"],
     required: true,
   },
 });

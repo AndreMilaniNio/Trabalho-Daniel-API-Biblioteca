@@ -1,16 +1,33 @@
-# Requisição de verificação
-GET http://localhost:3000/
+# USUÁRIOS
 
-###
+### #Listar usuários
+GET http://localhost:3000/users
+
+### # Criar novo usuário
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Rodrigo Faro Rocha",
-  "sex": "Feminino",
+  "name": "Michael Jackson",
+  "sex": "Masculino",
   "address": "Rua B, 213",
   "birthDate": "1990-04-13T15:32:00.000Z"
 }
 
-###
-GET http://localhost:3000/users
+
+
+# AUTORES
+
+### #Listar autores
+GET http://localhost:3000/authors
+
+### # Criar novo autor
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "Mark Manson",
+  "birthDate": "1984-03-09",
+  "sex": "Masculino",
+  "writingGenre": "Others"
+}
