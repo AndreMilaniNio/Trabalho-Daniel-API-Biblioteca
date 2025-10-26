@@ -2,6 +2,8 @@ import { ShowUsers } from "../controllers/users/showUsers.js";
 import { NewUser } from "../controllers/users/newUsers.js";
 import { NewAuthor } from "../controllers/authors/newAuthor.js";
 import { ShowAuthors } from "../controllers/authors/showAuthors.js";
+import { NewBook } from "../controllers/books/newBook.js";
+import { ShowBooks } from "../controllers/books/showBooks.js";
 
 export async function Routes(app) {
   app.get("/", async (request, response) => {
@@ -13,8 +15,15 @@ export async function Routes(app) {
   // Mostrar usuários
   app.get("/users", ShowUsers);
 
+  
   // Criação de autor
   app.post("/authors", NewAuthor);
   // Listar autores
   app.get("/authors", ShowAuthors);
+
+
+  // Criação de livros
+  app.post("/books", NewBook);
+  // Listar livros
+  app.get("/books", ShowBooks);
 }

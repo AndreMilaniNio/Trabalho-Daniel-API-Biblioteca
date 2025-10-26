@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const { Schema, model } = mongoose
+const { Schema } = mongoose;
 
 const booksSchema = mongoose.Schema({
   title: { type: String, required: true },
@@ -8,7 +8,7 @@ const booksSchema = mongoose.Schema({
   year: { type: Number, required: true },
 
   isAvailable: { type: Boolean, required: true },
-  expectedReturnDate: { type: Date, required: true },
+  expectedReturnDate: { type: Date, default: null, required: false },
 });
 
 const Book = mongoose.model("Book", booksSchema);

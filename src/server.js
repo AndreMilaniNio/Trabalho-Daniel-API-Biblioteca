@@ -6,7 +6,7 @@ import "dotenv/config";
 function Server() {
   app.listen({ host: process.env.HOST, port: process.env.PORT }).then(() => {
     console.log(
-      chalk.green(`API on em ${process.env.HOST}:${process.env.PORT}`)
+      chalk.yellow(`API on em ${process.env.HOST}:${process.env.PORT}`)
     );
   });
 }
