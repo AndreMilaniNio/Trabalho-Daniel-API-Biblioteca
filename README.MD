@@ -9,7 +9,6 @@ O projeto foi elaborado para a disciplina de Banco de Dados, lecionada pelo prof
 - **Fastify** – Framework web para criação de APIs rápidas e leves  
 - **MongoDB** – Banco de dados NoSQL utilizado para armazenar as informações  
 - **Dotenv** – Gerenciamento de variáveis de ambiente  
-- **Nodemon** – Reinicialização automática durante o desenvolvimento
 
 ## Scripts do projeto
 
