@@ -4,6 +4,7 @@ import { NewAuthor } from "../controllers/authors/newAuthor.js";
 import { ShowAuthors } from "../controllers/authors/showAuthors.js";
 import { NewBook } from "../controllers/books/newBook.js";
 import { ShowBooks } from "../controllers/books/showBooks.js";
+import { newLoans } from "../controllers/loans/newLoans.js";
 
 export async function Routes(app) {
   app.get("/", async (request, response) => {
@@ -26,4 +27,8 @@ export async function Routes(app) {
   app.post("/books", NewBook);
   // Listar livros
   app.get("/books", ShowBooks);
+
+
+  // Cria novo empréstimo
+  app.post("/loans", newLoans)
 }

@@ -8,7 +8,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Michael Jackson",
+  "name": "Lucas Fernandes",
   "sex": "Masculino",
   "address": "Rua B, 213",
   "birthDate": "1990-04-13T15:32:00.000Z"
@@ -25,16 +25,17 @@ GET http://localhost:3000/authors
 POST http://localhost:3000/authors
 Content-Type: application/json
 
+
 {
-  "name": "Mark Manson",
-  "birthDate": "1984-03-09",
+  "name": "George R. R. Martin",
+  "birthDate": "1948-09-20",
   "sex": "Masculino",
-  "writingGenre": "Others"
+  "writingGenre": "Fantasy"
 }
 
 
 
-# Livros
+# LIVROS
 
 ### # Listar livros
 GET http://localhost:3000/books
@@ -44,10 +45,24 @@ POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-  "title": "The Subtle Art of Not Giving a F*ck",
-  "synopsis": "Um guia que desafia a mentalidade tradicional de felicidade e sucesso, mostrando como aceitar limitações e escolher prioridades com sabedoria.",
-  "author": "Mark Manson",
-  "year": 2016,
+  "title": "A Game of Thrones",
+  "synopsis": "O início da saga épica de Westeros, onde casas nobres lutam pelo Trono de Ferro e segredos sombrios ameaçam o reino.",
+  "author": "George R. R. Martin",
+  "year": 1996,
   "isAvailable": true,
   "expectedReturnDate": null
+}
+
+
+# EMPRÉSTIMOS
+
+### # Criar novo empréstimo
+POST http://localhost:3000/loans
+Content-Type: application/json
+
+{
+  "user": "Lucas Fernandes",
+  "book": "A Game of Thrones",
+  "loanDate": "2025-10-26T10:00:00.000Z",
+  "returnDate": "2025-10-29T10:00:00.000Z"
 }
